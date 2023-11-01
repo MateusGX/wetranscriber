@@ -8,7 +8,7 @@ import { Download, RotateCcw } from "lucide-react";
 
 function App() {
   const {
-    finalTranscript,
+    transcript,
     listening,
     resetTranscript,
     browserSupportsSpeechRecognition,
@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="main">
       <div className="transcriptContainer">
-        <p className="transcript">{finalTranscript || ". . ."}</p>
+        <p className="transcript">{transcript || ". . ."}</p>
       </div>
 
       <div className="buttons">
@@ -46,7 +46,7 @@ function App() {
         >
           {listening ? "STOP LISTENING" : "START LISTENING"}
         </button>
-        <button onClick={() => exportTranscript(finalTranscript)}>
+        <button onClick={() => exportTranscript(transcript)}>
           <Download />
         </button>
       </div>
