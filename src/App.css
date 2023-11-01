@@ -1,0 +1,59 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+button {
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: #fafafa;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #fafafa;
+  background: #252525;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+.transcriptContainer {
+  max-height: calc(100vh - 100px);
+  flex: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100vw;
+}
+
+.transcript {
+  flex-grow: 1;
+  line-height: 5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4em;
+  font-family: "Cousine", monopsace;
+  word-break: break-word;
+  white-space: pre-wrap;
+  align-self: flex-start;
+  padding: 20px;
+}
+
+.buttons {
+  background-color: #181818;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
